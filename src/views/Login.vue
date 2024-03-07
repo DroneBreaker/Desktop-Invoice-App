@@ -1,13 +1,14 @@
 <template>
     <div>
         <div class="h-44">
-            <div class=""></div>
+            <div class="h-full w-full"></div>
             <h1>Login</h1>
 
             <form>
-                <input placeholder=""/>
-                <input placeholder=""/>
-                <input placeholder=""/>
+                <div class="mx-4">
+                    <label for="business-tin">Business TIN</label>
+                    <input placeholder="Business TIN" type="text">
+                </div>
             </form>
         </div>
     </div>
