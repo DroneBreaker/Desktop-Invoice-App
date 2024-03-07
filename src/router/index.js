@@ -4,7 +4,7 @@ import Login from '../views/Login.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '',
     name: 'intro',
     component: Intro
   },
@@ -15,19 +15,19 @@ const routes = [
     component: Login
   },
 
-//   {
-//     path: '/about',
-//     name: 'about',
-//     // route level code-splitting
-//     // this generates a separate chunk (about.[hash].js) for this route
-//     // which is lazy-loaded when the route is visited.
-//     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-//   },
+  {
+    path: '/register',
+    name: 'register',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "register" */ '../views/Register.vue')
+  },
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env),
-  routes
+  history: createWebHistory(),
+  routes,
 })
 
 export default router

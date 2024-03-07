@@ -1,5 +1,5 @@
 <template>
-  <button>
+  <button id="btn">
     <router-link to="/login">
       Click to Login
     </router-link>
@@ -13,8 +13,8 @@ export default {
 </script>
 
 <style>
-  button {
-    width: 140px;
+  #btn {
+    width: 150px;
     height: 60px;
     color: white;
     background-color: #9b8a8a9d;

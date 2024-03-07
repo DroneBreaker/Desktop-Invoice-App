@@ -1,8 +1,8 @@
 <template>
     <div>
         <center>
-            <h2>Welcome to Bukz Invoicing App</h2>
-            <Button/>
+            <h2 class="mt-[240px] text-4xl font-light mb-4">Welcome to Bukz Invoicing App</h2>
+            <Button />
         </center>
     </div>
 </template>
@@ -19,9 +19,9 @@ export default {
 </script>
 
 <style>
-h2 {
+/* h2 {
     font-weight: 400;
     font-size: 40px;
     margin-top: 25%;
-}
+} */
 </style>

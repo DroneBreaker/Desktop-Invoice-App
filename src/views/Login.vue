@@ -1,10 +1,20 @@
 <template>
     <div>
-        <div class="h-44">
+        <div class="h-44 w-32">
             <div class="h-full w-full"></div>
-            <h1>Login</h1>
+            <h1 class="login">Login</h1>
 
             <form>
+                <div class="mx-4">
+                    <label for="business-tin">Business TIN</label>
+                    <input placeholder="Business TIN" type="text">
+                </div>
+
+                <div class="mx-4">
+                    <label for="business-tin">Business TIN</label>
+                    <input placeholder="Business TIN" type="text">
+                </div>
+
                 <div class="mx-4">
                     <label for="business-tin">Business TIN</label>
                     <input placeholder="Business TIN" type="text">
@@ -23,5 +33,9 @@ export default {
 <style>
     h1 {
         font-weight: 400;
+    }
+
+    .login {
+        margin-top: 20%;
     }
 </style>
