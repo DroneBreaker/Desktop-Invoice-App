@@ -57,6 +57,6 @@ import Button from "./components/Button.vue";
   height: 30px;
 }
 .titlebar-button:hover {
-  background: #5bbec3;
+  background: #30bac1;
 }
 </style>

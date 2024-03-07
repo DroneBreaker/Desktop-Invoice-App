@@ -1,7 +1,7 @@
 <template>
     <div>
         <center>
-            <h2 class="mt-[240px] text-4xl font-light mb-4">Welcome to Bukz Invoicing App</h2>
+            <h2 class="mt-[300px] text-4xl font-light mb-4">Welcome to Bukz Invoicing App</h2>
             <Button />
         </center>
     </div>

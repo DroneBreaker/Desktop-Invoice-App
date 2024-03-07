@@ -1,14 +1,19 @@
 <template>
   <button id="btn">
     <router-link to="/login">
-      Click to Login
+      {{ title }}
     </router-link>
   </button>
 </template>
 
-<script>
+<script scoped>
 export default {
   name: 'button',
+  data() {
+    return {
+      title: 'Click to Login',
+    }
+  }
 }
 </script>
 
@@ -17,7 +22,7 @@ export default {
     width: 150px;
     height: 60px;
     color: white;
-    background-color: #9b8a8a9d;
+    background-color: #329ea3;
     border-radius: 8px;
     cursor: pointer;
     font-size: large;
