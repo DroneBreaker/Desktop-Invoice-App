@@ -2,7 +2,7 @@
     <div>
         <div>
             <!-- Form Card -->
-            <div class="mt-[70px] mx-[30%] bg-white h-[580px] w-[460px] text-black rounded-lg">
+            <div class="mt-[85px] mx-[30%] bg-white h-[580px] w-[460px] text-black rounded-lg">
                 <center>
                     <!-- Avatar section -->
                     <div class="mt-[16] h-36 w-36 rounded-full bg-[#329ea3]">
@@ -46,10 +46,12 @@
                 </div>
 
                 <button class="mx-4 w-[92%] h-[2.5rem] bg-[#329ea3] rounded-md text-white mb-2">
+                    <a href="/">
+                        Login
+                    </a>
                     <!-- <router-link to="/">
                         Login
                     </router-link> -->
-                    Login
                 </button>
 
                 <a class="mx-[30%] text-[#329ea3]" href="/register">Register new company?</a>
