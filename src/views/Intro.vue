@@ -7,15 +7,12 @@
     </div>
 </template>
 
-<script>
-import Button from '../components/Button.vue'
+<script setup>
+/**
+* Imports
+*/
+  import Button from '../components/Button.vue'
 
-export default {
-    name: 'intro',
-    components: {
-        Button
-    }
-}
 </script>
 
 <style>

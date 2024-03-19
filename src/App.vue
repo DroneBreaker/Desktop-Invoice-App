@@ -1,8 +1,11 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import Intro from "./views/Intro.vue";
-import Button from "./components/Button.vue";
+/**
+ * Imports
+*/
+  import Intro from "./views/Intro.vue";
+  import Button from "./components/Button.vue";
 
 </script>
 

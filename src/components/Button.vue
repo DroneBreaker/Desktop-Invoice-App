@@ -1,20 +1,16 @@
 <template>
   <button id="btn">
-    <router-link to="/login">
+    <RouterLink to="/login">
       {{ title }}
-    </router-link>
+    </RouterLink>
   </button>
 </template>
 
-<script scoped>
-export default {
-  name: 'button',
-  data() {
-    return {
-      title: 'Click to Login',
-    }
-  }
-}
+<script setup>
+/**
+* Page Title
+*/
+  const title = "Click to Login"
 </script>
 
 <style>

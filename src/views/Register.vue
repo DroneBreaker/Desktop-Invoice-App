@@ -67,10 +67,8 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'register',
-}
+<script setup>
+
 </script>
 
 <style>
