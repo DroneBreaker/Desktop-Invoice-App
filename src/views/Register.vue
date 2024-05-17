@@ -1,76 +1,75 @@
-<template>
-    <div>
-        <div>
-            <!-- Form Card -->
-            <div class="mt-[60px] mx-[30%] bg-white h-[630px] w-[460px] text-black rounded-lg">
-                <center>
-                    <!-- Avatar section -->
-                    <div class="mt-[16] h-36 w-36 rounded-full bg-[#329ea3]">
-                        Avatar SVG
-                    </div>
-
-                    <h1 class="login my-[15px] text-xl">Registration</h1>
-
-                </center>
-                    <!-- Form section -->
-                <form>
-                    <div class="mx-4 flex flex-col">
-                        <label class="font-bold text-md mb-2" for="business-tin">Business TIN</label>
-                        <input class="w-[99%] h-10 border-2 p-2 px-4 rounded-md mb-4" placeholder="Business TIN" type="text">
-                    </div> 
-                </form>
-
-                <form>
-                    <div class="mx-4 flex flex-col">
-                        <label class="font-bold text-md mb-2" for="pin">PIN</label>
-                        <input class="w-[99%] h-10 border-2 p-2 px-4 rounded-md mb-4" placeholder="Enter 6 digits pin code" type="text">
-                    </div> 
-                </form>
-
-                <form>
-                    <div class="mx-4 flex flex-col">
-                        <label class="font-bold mb-2" for="password">Business Name</label>
-                        <input disabled class="w-[99%] bg-gray-300 h-10 border-2 p-2 px-4 rounded-md mb-4" placeholder="Business Name" type="text">
-                    </div>
-                </form>
-
-                <form>
-                    <div class="mx-4 flex flex-col">
-                        <label class="font-bold mb-2" for="password">Full Name</label>
-                        <input disabled class="w-[99%] bg-gray-300 h-10 border-2 p-2 px-4 rounded-md mb-4" placeholder="Full Name" type="text">
-                    </div>
-                </form>
-                
-                <!-- <div class="mx-4 flex flex-row justify-between">
-                    <div class="flex flex-row">
-                        <input type="checkbox">
-                        <p class="mx-2 mt-2 text-sm">Remember My Login</p>
-                    </div>
-
-                    <a href="/" class="text-sm mt-2 text-blue-600 mb-4">
-                        Forgot Password?
-                    </a>
-                </div> -->
-
-                <button class="mx-4 w-[92%] h-[2.5rem] bg-[#329ea3] rounded-md text-white mb-2">
-                    <!-- <router-link to="/">
-                        Login
-                    </router-link> -->
-                    <a href="/">
-                        Next
-                    </a>
-                </button>
-
-                <a class="ml-[42%] text-sm text-[#329ea3]" href="/login">Already have an account? Click to Login</a>
-            </div>
-        </div>
-    </div>
-</template>
-
 <script setup>
+/**
+ * Imports
+*/
+  import Button from '../components/Button.vue'
 
+/**
+ * Placeholders
+*/
+  const firstNameText = "FIRST NAME"
+  const lastNameText = "LAST NAME"
+  const introText = "Create an Account"
+  const email = "EMAIL"
+  const password = "PASSWORD"
+  const confirmPassword = "CONFIRM PASSWORD"
+  const loginText = "Already have an Account?"
+  const rememberMeText = "Remember me?"
 </script>
 
-<style>
-    
-</style>
+<template>
+  <div class="grid md:grid-cols-2 grid-cols-1">
+    <div class="bg-red-600 md:h-[100vh] h-[60vh] overflow-auto">Hi</div>
+
+    <!-- Second grid -->
+    <div>
+      <div class="md:mt-16 mt-8 md:ml-[18%] ml-[8%] md:mx-0 mx-4">
+        <h1 class="text-5xl font-bold">{{ introText }}</h1>
+        
+
+        <form class="mt-8 w-[32rem]">
+          <div class="flex flex-col">
+            <label class="text-blue-600 text-xs font-medium mb-2">{{ firstNameText }}</label>
+            <input required type="text" class="p-3 px-4 w-[100%] border-2 border-gray-300 rounded-md mb-4" placeholder="Enter your first name"/>
+          </div>
+
+          <div class="flex flex-col">
+            <label class="text-blue-600 text-xs font-medium mb-2">{{ lastNameText }}</label>
+            <input required type="text" class="p-3 px-4 w-[100%] border-2 border-gray-300 rounded-md mb-4" placeholder="Enter your last name"/>
+          </div>
+
+          <div class="flex flex-col">
+            <label class="text-blue-600 text-xs font-medium mb-2">{{ email }}</label>
+            <input required type="text" class="p-3 px-4 w-[100%] border-2 border-gray-300 rounded-md mb-4" placeholder="Enter your email"/>
+          </div>
+
+          <div class="flex flex-col">
+            <label class="text-blue-600 text-xs font-medium mb-2">{{ password }}</label>
+            <input required type="text" class="p-3 px-4 mb-4 w-[100%] border-2 border-gray-300 rounded-md" placeholder="Enter your password"/>
+          </div>
+          
+          <div class="flex flex-col">
+            <label class="text-blue-600 text-xs font-medium mb-2">{{ confirmPassword }}</label>
+            <input required type="text" class="p-3 px-4 mb-4 w-[100%] border-2 border-gray-300 rounded-md" placeholder="Confirm your password"/>
+          </div>
+
+          <div class="flex flex-row justify-between">
+            <div>
+              <input type="checkbox"/>
+              <label class="mx-2">{{ rememberMeText }}</label>
+            </div>
+
+            <!-- <p class="text-blue-600 font-medium">Forgot password?</p> -->
+            <p>{{ loginText }}
+                <span class="text-blue-600 font-medium">
+                    <RouterLink to="/">Log in</RouterLink>
+                </span>
+            </p>
+          </div>
+
+          <Button buttonText="Submit"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>

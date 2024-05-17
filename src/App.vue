@@ -4,13 +4,12 @@
 /**
  * Imports
 */
-  import Intro from "./views/Intro.vue";
-  import Button from "./components/Button.vue";
-
+  import { RouterLink, RouterView } from 'vue-router'
+  import Login from './views/Login.vue';
 </script>
 
 <template>
-  <div class="bg-black h-[100vh] text-white overflow-auto">
+  <div>
     <div data-tauri-drag-region class="titlebar">
       <div class="titlebar-button" id="titlebar-minimize">
         <img
@@ -30,9 +29,9 @@
         <img src="https://api.iconify.design/mdi:close.svg" alt="close" />
       </div>
     </div>
-    
-    <router-view/>
   </div>
+
+  <RouterView />
 </template>
 
 <style scoped>
@@ -63,3 +62,4 @@
   background: #30bac1;
 }
 </style>
+

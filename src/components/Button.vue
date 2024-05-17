@@ -1,35 +1,26 @@
 <template>
-  <button id="btn">
-    <RouterLink to="/login">
-      {{ title }}
-    </RouterLink>
-  </button>
+    <div>
+        <button class="bg-blue-600 mt-4 p-3 px-4 rounded-md text-white w-40 mb-4 font-bold">
+            {{ props.buttonText }}
+        </button>
+    </div>
 </template>
 
 <script setup>
 /**
-* Page Title
+ * 
 */
-  const title = "Click to Login"
+    const buttonLocation = "{{ props.buttonText.location }}";
+    const props = defineProps({
+        buttonText: {
+            type: String,
+            required: true,
+            default: "Unknown Button",
+            location: String
+        }
+    })
 </script>
 
-<style>
-  #btn {
-    width: 150px;
-    height: 60px;
-    color: white;
-    background-color: #329ea3;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: large;
-  }
+<style lang="scss" scoped>
 
-  a{
-    text-decoration: none;
-    color: white;
-  }
-
-  a:hover {
-    color: #24c8db;
-  }
 </style>
